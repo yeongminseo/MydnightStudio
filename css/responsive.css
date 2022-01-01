@@ -1,0 +1,146 @@
+
+@media screen and (max-width:1200px){
+    *{
+        line-height: 1.6em;
+    }
+    #wrap .main_wrap{height:540px;}
+    .language_wrap{display:none;}
+    .language_wrap{display:none;}
+    .buisness_title {justify-content: center; width:100%;}
+    .buisness_title_wrap .buisness_title_decobox{display:none}
+    .buisness_title p {font-size: 14px;}
+    .buisness_title h1 {font-size: 70px;}
+    .cost_area_contents {
+        width: 100%;
+    }
+    .cost_area .cost_area_title{
+        width:100%;
+    }
+}
+@media screen and (max-width:1000px){
+    header ul {display:none;}
+    header .logo {width:180px;}
+    #wrap .main_wrap{height:400px;}
+    header .hamberger_btn {display:flex;}
+    .buisness_title {flex-direction: column;}
+    .buisness_title p{padding-left: 0;}
+    .cost_area{    padding: 60px 20px;}
+    .cost_img_wrap {
+        height: 300px;
+    }
+    #mobile_gnb{display:block}
+    .cost_area_contents_box {
+        height: 300px;
+        margin-bottom: 2%;
+    }
+    .cost_area_contents_inner {
+        flex-wrap: wrap;
+        
+    }
+    .cost_area_contents_box{width:49%;}
+    .cost_area_contents_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .cost_area .cost_area_title {
+        justify-content: center;
+    }
+    .cost_area .cost_area_title span {display:none;}
+    .news_title {text-align: center;}
+
+}
+@media screen and (max-width:860px){
+    .main_text h2{font-size: 52px; line-height: 4rem;}
+    .main_text h4 {font-size: 28px;}
+    .main_text p{font-size: 16px; }
+    .main_text {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .section_news {
+        padding: 86px 1.25%;
+    }
+    .icon_area {
+        
+        justify-content: center;
+         padding: 0 ;
+        position: absolute;
+        left: 0;
+        
+        width: 100%;
+    }
+    .buisness_title p{    width: 65%;
+        text-align: center;}
+    .buisness_area_contents {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center;
+        justify-content: center;
+        padding:0 !important;
+    }
+    .buisness_area_contents .buisness_area_contents_left {
+        width: 94%;
+    }
+    .buisness_area_contents .buisness_area_contents_right {
+        width: 100%;
+    }
+    .buisness_area_contents_right .contents_right_textarea {
+        position: static;
+        transform: initial;
+        padding: 20px 0 30px 0;
+    }
+    .buisness_area_contents .buisness_area_contents_right p {
+        line-height: 1.2rem;
+        margin-top: 0;
+    }
+    .content_img_wrap {
+        height: auto;
+    }
+    .btn_group_wrapper{
+        display:none;
+    }
+    .section_about{display:none;}
+    .section_news{width:100%}
+}
+    @media screen and (max-width:560px){
+        header{padding: 20px 20px;}
+        .main_text h2 {
+            font-size: 38px;
+        }
+        .main_text h4 {
+            font-size: 23px;
+            font-weight: 400;
+        }
+        header a.logo{
+            width: 190px;
+    height: 38px;
+        }
+        .buisness_title h1 {
+            font-size: 50px;
+        }
+        .buisness_title p{display:none;}
+        .buisness_area_contents_right h4 {font-size: 30px !important;}
+        .buisness_area_contents .buisness_area_contents_right h3{
+            font-size: 20px ;
+            font-weight: 400;
+        }
+        .buisness_area_contents .buisness_area_contents_right p{font-size: 14px; width:90%; margin: 0 auto;}
+        .buisness_area_contents .buisness_area_contents_right p br{display:none;}
+
+        .buisness_area_contents .buisness_area_contents_right {
+
+            padding: 14px 0;
+        }
+        .cost_area_contents_text h2 {
+            font-size: 22px;
+        }
+        .cost_area_contents_text{
+            text-align: center;
+        }
+    }
+
+
+
