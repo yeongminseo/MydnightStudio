@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!--노토산스 웹폰트-->
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--font awesome cdn-->
     <!--에스코어드림-->
     <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
     <!--에스코어드림-->
@@ -17,22 +20,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
-    <!--제이쿼리 GSAP SCROLLTRIGER (순서대로) 연동-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    
-    <!--제이쿼리 GSAP SCROLLTRIGER (순서대로) 연동-->
     
     <script src="./js/MouseEffect.js" defer></script>
     <script src="./js/hamber.js" defer></script>
+    <script src="./js/event.js" defer></script>
 </head>
 <body>
     <div class="mousecursor"></div>
     <div id="wrap">
         <div class="main_wrap">
         <header>
-                <a class="logo" href="#"></a>
-
+                <a class="logo" href="#" style="padding-top: 2px;"><img src="images/logo.png" alt="" width="160px"></a>
             <ul>
                 <li><a href="#">COMPANY</a></li>
                 <li><a href="#">BUISNESS</a></li>
@@ -162,7 +160,10 @@
                 <div class="cost_area_contents_inner">
                     <div class="cost_area_contents_box">
                         <div class="cost_img_wrap">
-                        <img src="images/template.jpg" alt="images" style="width:140%;">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="images/template.jpg">
+                                <img src="images/template_2.jpg" alt="images" >
+                            </picture>
                     </div>
                         <div class="cost_area_contents_text">
                             <h2>웹-템플릿</h2>
@@ -179,7 +180,10 @@
                     </div>
                     <div class="cost_area_contents_box">
                         <div class="cost_img_wrap">
-                        <img src="images/navysolution.jpg" alt="images" style="width:140%;">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="images/navysolution.jpg">
+                                <img src="images/navysolution_2.jpg" alt="images" >
+                            </picture>
                     </div>
                         <div class="cost_area_contents_text">
                             <h2>웹-솔루션</h2>
@@ -196,7 +200,10 @@
                     </div>
                     <div class="cost_area_contents_box">
                         <div class="cost_img_wrap">
-                        <img src="images/develop.jpg" alt="images" style="width:140%;">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="images/develop.jpg">
+                                <img src="images/develop_2.jpg" alt="images">
+                            </picture>
                     </div>
                         <div class="cost_area_contents_text">
                             <h2>웹-맞춤개발</h2>
@@ -213,7 +220,10 @@
                     </div>
                     <div class="cost_area_contents_box">
                         <div class="cost_img_wrap">
-                        <img src="images/talking.jpg" alt="images" style="width:140%;">
+                        <picture>
+                            <source media="(max-width: 1024px)" srcset="images/talking.jpg">
+                            <img src="images/talking_2.jpg" alt="images">
+                        </picture>
                     </div>
                         <div class="cost_area_contents_text">
                             <h2>상세페이지</h2>
@@ -240,48 +250,73 @@
                     <div class="news_contents_wrap">
                     <div class="news_contents box1">
                         <div class="news_contents_img_wrap">
-                            <img src="images/develop.jpg">
+                            <img src="images/news1.jpg">
                             <i class="fas fa-plus"></i>
                         </div>
                         <div class="news_contents_text_area">
-                            <h4>더데이셀 쇼핑몰 개발 계약 체결</h4>
+                            <a href="#">더데이셀 쇼핑몰 개발 계약 체결</a>
                             <span>2021. 10. 21</span>
                         </div>
                     </div>
                     <div class="news_contents box1">
                         <div class="news_contents_img_wrap">
-                            <img src="images/develop.jpg">
+                            <img src="images/news2.jpg">
                             <i class="fas fa-plus"></i>
                         </div>
                         <div class="news_contents_text_area">
-                            <h4>더데이셀 쇼핑몰 개발 계약 체결</h4>
-                            <span>2021. 10. 21</span>
+                            <a>(주)비젼세라믹 반응형 웹사이트 개발 계약 체결</a>
+                            <span>2021. 10. 19</span>
                         </div>
                     </div>
                     <div class="news_contents box1">
                         <div class="news_contents_img_wrap">
-                            <img src="images/develop.jpg">
+                            <img src="images/news3.jpg">
                             <i class="fas fa-plus"></i>
                         </div>
                         <div class="news_contents_text_area">
-                            <h4>더데이셀 쇼핑몰 개발 계약 체결</h4>
-                            <span>2021. 10. 21</span>
+                            <a>가온 PHARM 댕댕요법 반응형 쇼핑몰 개발 계약 체결</a>
+                            <span>2021. 10. 13</span>
                         </div>
                     </div>
                 </div>
                 </div>
                 <div class="section_about">
-                    <img src="images/about.jpg">
                     <div class="about_text">
                         <a href="#">About us</a>
                         <div>
-                        <a href="#">more +</a>
+                        <a href="#" class="about_more_btn">more +</a>
                         </div>
                    </div>
                 </div>
             </div>
         </section>
     </div>
+    
+    <footer>
+        <div class="footer_contents_wrap">
+            <div class="footer_contents">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>ADDRESS</p>
+                <p>광주본사 광주광역시 쌍촌동 월드컵4강로 26길 61, <br>
+                웹빌딩타워 2차 508호 <br>
+                062-333-3333/062-777-7777
+                </p>
+            </div>
+            <div class="footer_contents">
+                <i class="fas fa-info"></i>
+                <p>INFORMATIN</p>
+                <p>대표:이인신 정일현 <br>
+                사업자등록번호: 08080808080 <br>
+                ㈜미드나잇웹스튜디오
+                </p>
+            </div>
+                
+            <div class="footer_contents">
+                <a href="#">개인정보취급방침</a>
+                <a href="#">견적문의하기</a>
+            </div>
+        </div>
+    </footer>
     <div id="mobile_gnb">
         <ul>
             <li><a href="#">

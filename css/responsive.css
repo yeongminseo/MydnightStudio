@@ -1,5 +1,6 @@
 
 @media screen and (max-width:1200px){
+    header{padding: 20px 20px !important;}
     *{
         line-height: 1.6em;
     }
@@ -17,7 +18,46 @@
         width:100%;
     }
 }
+@media screen and (max-width:1024px) {
+    picture img {
+        filter:brightness(50%);
+        width:100%
+    }
+    .cost_area_contents_box{
+        width:100%;
+        height: 244px;
+        margin-bottom: 20px;
+    }
+    .cost_area{
+        height:auto;
+        background: none;
+    }
+    .cost_area_contents_text h2 {
+        font-size: 28px;
+        color:white;
+    }
+    .cost_area_contents_text p {
+       
+        color:white;
+    }
+    .cost_area_contents_text{
+        text-align: center;
+    }
+    
+    
+    .cost_area .cost_area_title h2 {padding:0; color:#222;}
+}
 @media screen and (max-width:1000px){
+    picture img{
+        width:100%;
+        
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
+        background-color: #0000006b;
+    }
     header ul {display:none;}
     header .logo {width:180px;}
     #wrap .main_wrap{height:400px;}
@@ -29,15 +69,15 @@
         height: 300px;
     }
     #mobile_gnb{display:block}
-    .cost_area_contents_box {
+    /* .cost_area_contents_box {
         height: 300px;
         margin-bottom: 2%;
-    }
+    } */
     .cost_area_contents_inner {
         flex-wrap: wrap;
         
     }
-    .cost_area_contents_box{width:49%;}
+    
     .cost_area_contents_text {
         position: absolute;
         top: 50%;
@@ -49,20 +89,41 @@
     }
     .cost_area .cost_area_title span {display:none;}
     .news_title {text-align: center;}
-
+    footer{
+        padding:30px 0;
+    }
+    footer .footer_contents{
+        width:100%;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    footer .footer_contents:last-child{
+        margin:0px auto; 
+    }
+    .section_about{display:none;}
+    .section_news{width:100%}
+    .section_news {
+        padding: 50px 5.25%;
+    }
 }
+
 @media screen and (max-width:860px){
+    
+    .cost_area .cost_area_title h2 {
+        font-size: 50px;
+    }
     .main_text h2{font-size: 52px; line-height: 4rem;}
     .main_text h4 {font-size: 28px;}
     .main_text p{font-size: 16px; }
+    .news_contents_img_wrap{
+        height:300px;
+    }
     .main_text {
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
     }
-    .section_news {
-        padding: 86px 1.25%;
-    }
+
     .icon_area {
         
         justify-content: center;
@@ -102,44 +163,72 @@
     .btn_group_wrapper{
         display:none;
     }
-    .section_about{display:none;}
-    .section_news{width:100%}
+    .news_contents_wrap {
+        flex-wrap: wrap;
+        
+    }
+    .news_contents {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
 }
     @media screen and (max-width:560px){
-        header{padding: 20px 20px;}
+        header{
+            padding:10px 20px;
+        }
+
+        .logo img{
+            width:120px;
+        }
         .main_text h2 {
             font-size: 38px;
+            
         }
         .main_text h4 {
             font-size: 23px;
             font-weight: 400;
         }
         header a.logo{
-            width: 190px;
-    height: 38px;
+
         }
         .buisness_title h1 {
             font-size: 50px;
         }
         .buisness_title p{display:none;}
-        .buisness_area_contents_right h4 {font-size: 30px !important;}
+        .buisness_area_contents_right h4 {font-size: 40px !important;
+        margin-bottom: 6px;
+        }
+        .buisness_area_contents_right .contents_right_textarea{
+            padding:0;
+        }
         .buisness_area_contents .buisness_area_contents_right h3{
             font-size: 20px ;
             font-weight: 400;
         }
-        .buisness_area_contents .buisness_area_contents_right p{font-size: 14px; width:90%; margin: 0 auto;}
-        .buisness_area_contents .buisness_area_contents_right p br{display:none;}
+
+        .buisness_area_contents .buisness_area_contents_right p{
+            font-size: 14px; width:90%; margin: 0 auto;
+            display: none;
+
+        }
+        .buisness_area_contents .buisness_area_contents_right p br{}
 
         .buisness_area_contents .buisness_area_contents_right {
 
-            padding: 14px 0;
+            padding: 10px 0px 14px 0;
         }
-        .cost_area_contents_text h2 {
-            font-size: 22px;
+        
+        .buisness .buisness_area {
+            padding:40px 0;
         }
-        .cost_area_contents_text{
-            text-align: center;
+        .cost_area {
+            padding: 40px 10px;
         }
+        
+        
+        .news_contents:last-child{display: none;}
     }
 
 
